@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteNot</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <h1>WasteNot – Save Your Food</h1><br>
+    <input id="foodName" placeholder="Food name" /><br>
+    <div id="aiSuggestion" style="color: gray; font-size: 14px;"></div><br>
+    <input type="date" id="expiryDate" /><br><br>
+    <div class="button-wrapper">
+        <button onclick="addItem()">Add Item</button>
+    </div>
+    <hr />
+    <div id="itemList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
