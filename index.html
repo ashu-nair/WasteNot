@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>WasteNot – Save Your Food</h1><br>
+    <p>Help reduce food waste by donating your surplus food.</p>
     <input id="foodName" placeholder="Food name" /><br>
     <div id="aiSuggestion" style="color: gray; font-size: 14px;"></div><br>
     <input type="date" id="expiryDate" /><br><br>
@@ -16,6 +17,20 @@
         <button onclick="addItem()">Add Item</button>
     </div>
     <hr />
+    <div id="mapBox" style="margin-top: 20px;">
+        <input id="location" placeholder="Enter your location" />
+        <button onclick="showMap()">Show Nearby Donation Centers</button>
+        <h3>Nearby Donation Centers</h3>
+        <iframe
+        id="mapFrame"
+        width="100%"
+        height="300"
+        style="border: 2px; border-color: black;"
+        loading="lazy"
+        allowfullscreen>
+        </iframe>
+    </div>
+
     <div id="itemList"></div>
     <script src="script.js"></script>
 </body>

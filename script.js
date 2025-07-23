@@ -64,4 +64,13 @@ function deleteItem(index) {
   localStorage.setItem("items", JSON.stringify(items));
   renderItems();
 }
+function showMap() {
+  const city = document.getElementById("location").value.trim();
+  if (city) {
+    const url = `https://www.google.com/maps?q=food+donation+centers+in+${encodeURIComponent(city)}&output=embed`;
+    document.getElementById("mapFrame").src = url;
+    document.getElementById("mapBox").scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 window.onload = renderItems;
