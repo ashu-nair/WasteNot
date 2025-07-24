@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Food Items</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>My Food List</h1>
+  <div id="itemList"></div>
+  <div id="mapBox" style="margin-top: 20px;">
+        <input id="location" placeholder="Enter your location" />
+        <button onclick="showMap()">Show Nearby Donation Centers</button>
+        <h3>Nearby Donation Centers</h3>
+        <iframe
+        id="mapFrame"
+        width="100%"
+        height="300"
+        style="border: 2px; border-color: black;"
+        loading="lazy"
+        allowfullscreen>
+        </iframe>
+    </div>
+
+  <a href="index.html"><button>← Back to Home</button></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
